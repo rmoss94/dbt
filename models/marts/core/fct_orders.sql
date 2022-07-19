@@ -15,7 +15,7 @@ cust_order as (
 ),
 
 order_amount as (
-    select order_id, amount
+    select order_id, case when status = 'success' then payments.amount end as amount
     from payments
 ),
 
