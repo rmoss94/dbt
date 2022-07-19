@@ -6,4 +6,6 @@ created AS CreatedDate,
 status,
 paymentmethod as payment_method
 
-from RMOSS_DEV.stripe.payment
+from {{source('stripe','payment')}}
+
+--RMOSS_DEV.stripe.payment

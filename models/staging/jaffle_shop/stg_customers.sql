@@ -3,4 +3,6 @@ select
     first_name,
     last_name
 
-from RMOSS_DEV.jaffle_shop.customers
+from {{source('jaffle_shop','customers')}}
+
+--RMOSS_DEV.jaffle_shop.customers

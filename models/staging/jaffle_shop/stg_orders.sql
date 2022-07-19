@@ -4,4 +4,6 @@ select
     order_date,
     status
 
-from RMOSS_DEV.jaffle_shop.orders
+from {{source('jaffle_shop','orders')}}
+
+--RMOSS_DEV.jaffle_shop.orders
